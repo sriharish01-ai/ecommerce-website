@@ -1,0 +1,86 @@
+/* ===== Base Styles ===== */
+.shopcategory-banner{
+    display: block;
+    margin: 30px auto;
+    width: 82%;
+}
+.shopcategory-indexsort{
+    display: flex;
+    margin: 0px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.shopcategory-sort{
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid #888;
+}
+.shopcategory-indexsort p span{
+    color: red;
+    font-weight: 600;
+}
+.shopcategory-products{
+    margin: 20px 170px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 80px;
+    column-gap: 20px;
+}
+
+/* ===== Responsive Media Queries ===== */
+
+/* Laptops & Large Screens */
+@media (max-width: 1280px) {
+    .shopcategory-products {
+        margin: 20px 100px;
+        grid-template-columns: 1fr 1fr 1fr;  /* 3 products per row */
+        row-gap: 60px;
+    }
+}
+
+/* Tablets Landscape */
+@media (max-width: 1024px) {
+    .shopcategory-products {
+        margin: 20px 60px;
+        grid-template-columns: 1fr 1fr 1fr;  /* 3 per row */
+        row-gap: 50px;
+    }
+    .shopcategory-banner {
+        width: 90%;
+    }
+}
+
+/* Tablets Portrait / Small Laptops */
+@media (max-width: 800px) {
+    .shopcategory-products {
+        margin: 20px 40px;
+        grid-template-columns: 1fr 1fr;   /* 2 per row */
+        row-gap: 40px;
+    }
+    .shopcategory-sort {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 500px) {
+    .shopcategory-indexsort {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    .shopcategory-products {
+        margin: 10px 20px;
+        grid-template-columns: 1fr;  /* 1 product per row */
+        row-gap: 30px;
+    }
+    .shopcategory-banner {
+        width: 100%;
+        margin: 20px auto;
+    }
+    .shopcategory-sort {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}

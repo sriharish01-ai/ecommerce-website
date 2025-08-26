@@ -1,0 +1,95 @@
+/* ===== Base Styles ===== */
+.popular {
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* stack heading + HR */
+  gap: 10px;
+  height: auto;
+  padding: 40px 0;
+}
+
+.popular h1 {
+  color: #171717;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.popular hr {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background: #252525;
+}
+
+.popular-item {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap; /* allows wrapping on small screens */
+  justify-content: center;
+  gap: 30px;
+}
+
+
+/* ===== Responsive Media Queries ===== */
+
+/* Laptops */
+@media (max-width: 1280px) {
+  .popular h1 {
+    font-size: 42px;
+  }
+  .popular hr {
+    width: 180px;
+  }
+  .popular-item {
+    gap: 25px;
+  }
+}
+
+/* Tablets Landscape */
+@media (max-width: 1024px) {
+  .popular h1 {
+    font-size: 36px;
+  }
+  .popular hr {
+    width: 160px;
+    height: 5px;
+  }
+  .popular-item {
+    gap: 20px;
+  }
+}
+
+/* Tablets Portrait / Small Laptops */
+@media (max-width: 800px) {
+  .popular h1 {
+    font-size: 30px;
+  }
+  .popular hr {
+    width: 140px;
+    height: 4px;
+  }
+  .popular-item {
+    margin-top: 40px;
+    gap: 18px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 500px) {
+  .popular {
+    padding: 25px 0;
+  }
+  .popular h1 {
+    font-size: 24px;
+  }
+  .popular hr {
+    width: 120px;
+    height: 3px;
+  }
+  .popular-item {
+    margin-top: 30px;
+    flex-direction: column; /* stack products */
+    align-items: center;
+    gap: 15px;
+  }
+}

@@ -1,0 +1,36 @@
+.breadcrum {
+  margin: 20px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* ---------- Responsive Breakpoints ---------- */
+@media (max-width: 1240px) {
+  .breadcrum {
+    font-size: 13px;
+    margin: 18px 0;
+  }
+}
+
+@media (max-width: 1080px) {
+  .breadcrum {
+    font-size: 12px;
+    margin: 16px 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .breadcrum {
+    font-size: 11px;
+    margin: 14px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .breadcrum {
+    font-size: 10px;
+    margin: 12px 0;
+    text-align: center; /* keeps it readable on small phones */
+  }
+}

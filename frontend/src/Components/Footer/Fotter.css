@@ -1,0 +1,151 @@
+.fotter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 40px 20px;
+}
+
+.fotter-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.fotter-logo p {
+  color: #383838;
+  font-size: 46px;
+  font-weight: 700;
+}
+
+.fotter-links {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  color: #252525;
+  font-size: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.fotter-links li {
+  cursor: pointer;
+}
+
+.fotter-social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.fotter-icon-container {
+  padding: 10px;
+  padding-bottom: 6px;
+  background: #fbfbfb;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+}
+
+.fotter-copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+  font-size: 20px;
+  text-align: center;
+}
+
+.fotter-copyright hr {
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+  height: 3px;
+  background: #c7c7c7;
+}
+
+/* 🔹 Responsive Breakpoints */
+
+/* Laptop - max 1280px */
+@media (max-width: 1280px) {
+  .fotter-logo p {
+    font-size: 40px;
+  }
+  .fotter-links {
+    gap: 40px;
+    font-size: 18px;
+  }
+}
+
+/* Tablet Landscape - max 1024px */
+@media (max-width: 1024px) {
+  .fotter-logo p {
+    font-size: 36px;
+  }
+  .fotter-links {
+    gap: 30px;
+    font-size: 18px;
+  }
+  .fotter-social-icons {
+    gap: 15px;
+  }
+  .fotter-copyright {
+    font-size: 18px;
+  }
+}
+
+/* Tablet Portrait - max 800px */
+@media (max-width: 800px) {
+  .fotter {
+    gap: 40px;
+  }
+  .fotter-logo {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .fotter-logo p {
+    font-size: 30px;
+  }
+  .fotter-links {
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
+  }
+  .fotter-social-icons {
+    justify-content: center;
+  }
+  .fotter-copyright {
+    font-size: 16px;
+  }
+}
+
+/* Mobile - max 500px */
+@media (max-width: 500px) {
+  .fotter {
+    gap: 30px;
+    padding: 20px;
+  }
+  .fotter-logo p {
+    font-size: 26px;
+  }
+  .fotter-links {
+    font-size: 14px;
+    gap: 12px;
+  }
+  .fotter-social-icons {
+    gap: 10px;
+  }
+  .fotter-icon-container {
+    padding: 8px;
+  }
+  .fotter-copyright {
+    font-size: 14px;
+  }
+  .fotter-copyright hr {
+    width: 90%;
+  }
+}
+        
